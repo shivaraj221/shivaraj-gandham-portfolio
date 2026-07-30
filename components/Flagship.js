@@ -4,15 +4,15 @@ import { flagshipProjects } from "@/data/projects";
 
 export default function Flagship() {
   return (
-    <section id="work" className="relative py-28 border-t border-line">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+    <section id="work" className="relative py-16 md:py-28 border-t border-line">
+      <div className="max-w-6xl mx-auto px-5 md:px-8">
         <SectionLabel index="04" title="Flagship builds" />
-        <p className="text-muted max-w-2xl -mt-6 mb-12">
+        <p className="text-muted max-w-2xl -mt-4 mb-8 md:-mt-6 md:mb-12 text-sm md:text-base">
           Enterprise-grade AI platforms built in production — the systems
           behind the resume.
         </p>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {flagshipProjects.map((p, i) => (
             <motion.div
               key={p.title}

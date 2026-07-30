@@ -5,8 +5,8 @@ import { liveProjects } from "@/data/projects";
 
 export default function LiveProjects() {
   return (
-    <section className="relative py-28 border-t border-line">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+    <section className="relative py-16 md:py-28 border-t border-line">
+      <div className="max-w-6xl mx-auto px-5 md:px-8">
         <SectionLabel index="05" title="Live deployments" />
         <p className="text-muted max-w-2xl -mt-6 mb-12">
           Shipped products, running right now. Click through and try them.

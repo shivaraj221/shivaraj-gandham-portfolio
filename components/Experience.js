@@ -29,11 +29,11 @@ const roles = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="relative py-28 border-t border-line">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+    <section id="experience" className="relative py-16 md:py-28 border-t border-line">
+      <div className="max-w-6xl mx-auto px-5 md:px-8">
         <SectionLabel index="03" title="Experience" />
 
-        <div className="relative border-l border-line ml-2 md:ml-6 space-y-16">
+        <div className="relative border-l border-line ml-2 md:ml-6 space-y-12 md:space-y-16">
           {roles.map((r, i) => (
             <motion.div
               key={r.title}

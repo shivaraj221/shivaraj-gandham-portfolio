@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
-      <main style={{ background: "#0A0A0F" }}>
+      <main style={{ background: "#0A0A0F", overflowX: "hidden" }}>
         <Hero />
         <About />
         <Skills />

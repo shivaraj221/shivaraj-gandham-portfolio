@@ -5,11 +5,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      style={{
-        position: "relative",
-        padding: "140px 5vw",
-        borderTop: "1px solid rgba(237,237,242,0.09)",
-      }}
+      className="relative py-16 md:py-[140px] px-5 md:px-[5vw] border-t border-[rgba(237,237,242,0.09)]"
     >
       <motion.span
         initial={{ opacity: 0, y: 20 }}
@@ -26,7 +22,7 @@ export default function Contact() {
           marginBottom: "18px",
         }}
       >
-        05 — Get in touch
+        06 — Get in touch
       </motion.span>
 
       <motion.h2
@@ -37,12 +33,12 @@ export default function Contact() {
         style={{
           fontFamily: "'Space Grotesk', sans-serif",
           fontWeight: 700,
-          fontSize: "clamp(2.2rem, 7vw, 5.5rem)",
+          fontSize: "clamp(1.9rem, 7vw, 5.5rem)",
           letterSpacing: "-0.02em",
           maxWidth: "16ch",
-          lineHeight: 1.02,
+          lineHeight: 1.06,
           color: "#EDEDF2",
-          marginBottom: "60px",
+          marginBottom: "40px",
         }}
       >
         Have an AI system worth building?{" "}
@@ -64,71 +60,61 @@ export default function Contact() {
         </a>
       </motion.h2>
 
+      {/* Contact cards — 2-col grid on mobile, row on sm+ */}
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.7, delay: 0.2 }}
-        style={{
-          display: "flex",
-          gap: "48px",
-          flexWrap: "wrap",
-        }}
+        className="grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap gap-6 sm:gap-12"
       >
         {/* Email */}
         <div>
-          <span
-            style={{
-              display: "block",
-              fontFamily: "'JetBrains Mono', monospace",
-              color: "#6EE7F9",
-              fontSize: "0.72rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: "10px",
-            }}
-          >
-            Email
-          </span>
+          <span style={{
+            display: "block",
+            fontFamily: "'JetBrains Mono', monospace",
+            color: "#6EE7F9",
+            fontSize: "0.72rem",
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            marginBottom: "10px",
+          }}>Email</span>
           <a
             href="mailto:shivarajgandham6@gmail.com"
             style={{
               color: "#8A87A3",
               textDecoration: "none",
-              fontSize: "0.95rem",
+              fontSize: "0.85rem",
               display: "flex",
               alignItems: "center",
               gap: "8px",
               transition: "color 0.25s",
+              wordBreak: "break-all",
             }}
             onMouseEnter={e => (e.currentTarget.style.color = "#EDEDF2")}
             onMouseLeave={e => (e.currentTarget.style.color = "#8A87A3")}
           >
-            <FiMail /> shivarajgandham6@gmail.com
+            <FiMail style={{ flexShrink: 0 }} /> shivarajgandham6@gmail.com
           </a>
         </div>
 
         {/* Phone */}
         <div>
-          <span
-            style={{
-              display: "block",
-              fontFamily: "'JetBrains Mono', monospace",
-              color: "#6EE7F9",
-              fontSize: "0.72rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: "10px",
-            }}
-          >
-            Phone
-          </span>
+          <span style={{
+            display: "block",
+            fontFamily: "'JetBrains Mono', monospace",
+            color: "#6EE7F9",
+            fontSize: "0.72rem",
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            marginBottom: "10px",
+          }}>Phone</span>
           <a
             href="tel:+918309170903"
             style={{
               color: "#8A87A3",
               textDecoration: "none",
-              fontSize: "0.95rem",
+              fontSize: "0.85rem",
               display: "flex",
               alignItems: "center",
               gap: "8px",
@@ -137,25 +123,21 @@ export default function Contact() {
             onMouseEnter={e => (e.currentTarget.style.color = "#EDEDF2")}
             onMouseLeave={e => (e.currentTarget.style.color = "#8A87A3")}
           >
-            <FiPhone /> +91 83091 70903
+            <FiPhone style={{ flexShrink: 0 }} /> +91 83091 70903
           </a>
         </div>
 
-        {/* Elsewhere */}
+        {/* GitHub */}
         <div>
-          <span
-            style={{
-              display: "block",
-              fontFamily: "'JetBrains Mono', monospace",
-              color: "#6EE7F9",
-              fontSize: "0.72rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: "10px",
-            }}
-          >
-            Elsewhere
-          </span>
+          <span style={{
+            display: "block",
+            fontFamily: "'JetBrains Mono', monospace",
+            color: "#6EE7F9",
+            fontSize: "0.72rem",
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            marginBottom: "10px",
+          }}>GitHub</span>
           <a
             href="https://github.com/shivaraj221"
             target="_blank"
@@ -163,42 +145,31 @@ export default function Contact() {
             style={{
               color: "#8A87A3",
               textDecoration: "none",
-              fontSize: "0.95rem",
+              fontSize: "0.85rem",
               display: "flex",
               alignItems: "center",
               gap: "8px",
-              marginBottom: "4px",
               transition: "color 0.25s",
             }}
             onMouseEnter={e => (e.currentTarget.style.color = "#EDEDF2")}
             onMouseLeave={e => (e.currentTarget.style.color = "#8A87A3")}
           >
-            <FiGithub /> GitHub
+            <FiGithub style={{ flexShrink: 0 }} /> @shivaraj221
           </a>
         </div>
 
         {/* Based in */}
         <div>
-          <span
-            style={{
-              display: "block",
-              fontFamily: "'JetBrains Mono', monospace",
-              color: "#6EE7F9",
-              fontSize: "0.72rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.08em",
-              marginBottom: "10px",
-            }}
-          >
-            Based in
-          </span>
-          <p
-            style={{
-              color: "#8A87A3",
-              fontSize: "0.95rem",
-              margin: 0,
-            }}
-          >
+          <span style={{
+            display: "block",
+            fontFamily: "'JetBrains Mono', monospace",
+            color: "#6EE7F9",
+            fontSize: "0.72rem",
+            textTransform: "uppercase",
+            letterSpacing: "0.08em",
+            marginBottom: "10px",
+          }}>Based in</span>
+          <p style={{ color: "#8A87A3", fontSize: "0.85rem", margin: 0 }}>
             Hyderabad, India
           </p>
         </div>

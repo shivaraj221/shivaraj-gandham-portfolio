@@ -36,8 +36,8 @@ const groups = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-28 border-t border-line">
-      <div className="max-w-6xl mx-auto px-6 md:px-8">
+    <section id="skills" className="relative py-16 md:py-28 border-t border-line">
+      <div className="max-w-6xl mx-auto px-5 md:px-8">
         <SectionLabel index="02" title="Skills" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

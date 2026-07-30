@@ -14,6 +14,8 @@ export default function Document() {
           name="description"
           content="Shivaraj Gandham — AI/ML Engineer building Agentic AI, RAG & LLM systems."
         />
+        <meta name="theme-color" content="#0a0a0f" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
       </Head>
       <body>
         <Main />
