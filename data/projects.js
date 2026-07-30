@@ -35,6 +35,13 @@ export const liveProjects = [
     url: "https://huggingface.co/spaces/Shivaraj22/Diffusion_Model1",
     kind: "HF Space",
   },
+  {
+    title: "NexAgri Dashboard",
+    tag: "AgriTech · Analytics",
+    desc: "A live farm intelligence dashboard — real-time crop monitoring, sensor analytics, and AI-driven agri insights deployed on Render.",
+    url: "https://weather-t97e.onrender.com/agri-dashboard",
+    kind: "Live App",
+  },
 ];
 
 // GitHub repos — the "engineering breadth" tier
@@ -208,7 +215,7 @@ export const flagshipProjects = [
     accent: "reason",
   },
   {
-    title: "AXIS",
+    title: "7Analytica",
     subtitle: "AI-Powered News Intelligence Platform",
     desc: "Real-time global news monitoring with a 3-tier semantic event-deduplication funnel (HNSW vector search, NER Jaccard pre-filter, cross-encoder corroboration) and vectorized NumPy matching for 50x faster cross-source clustering.",
     stack: ["FastAPI", "LangGraph", "Qdrant", "spaCy", "BGE Embeddings", "Next.js"],
